@@ -1,0 +1,6 @@
+echo Step1: Running case......
+pytest3 .\testCase\test_run.py --alluredir allure-report
+::pytest3 .\TestCase\test_realtime_case.py --allure_severities normal --alluredir allure-report
+
+echo Step2: Collecting report......
+start /b allure serve allure-report
